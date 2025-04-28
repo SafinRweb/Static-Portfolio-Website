@@ -178,4 +178,49 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     border: none;
     font-size: 16px;
 }
-
+/* Responsive media quary */
+@media screen and (max-width: 576px) {
+    .banner,
+    .skills-container, 
+    .resume-container, 
+    .about-items,
+    nav,
+    nav ul,
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .nav-title{
+        margin-left: 0px;
+    }
+    nav ul li{
+        margin-right: 0px;
+    }
+    .btn-primary{
+        margin: 10px;
+   }
+    .banner{
+        margin: 20px;
+    }
+    .header{
+        background-image:none;
+    }
+    .banner-image{
+        width: 100%;
+    }
+    .about {
+        padding: 50px 20px;
+    }
+    .skills-container .skill, 
+    .resume-container .resume {
+        width: 100%;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea {
+        width: calc(100% - 40px);
+    }
+}
